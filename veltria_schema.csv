@@ -1,0 +1,23 @@
+column_name,snowflake_type,description
+company_id,VARCHAR,Provider/source company identifier.
+company_name,VARCHAR,Company legal/trading name as available.
+domain,VARCHAR,Primary company domain.
+website,VARCHAR,Company website/domain field.
+country,VARCHAR,"ISO-style country code, e.g. US, DE, GB."
+region,VARCHAR,State/region/province.
+locality,VARCHAR,City/locality.
+description,VARCHAR,Company-level business description.
+industry,VARCHAR,Industry label when available.
+keywords,VARCHAR,Semicolon-separated keyword tags.
+ownership_type,VARCHAR,Semicolon-separated ownership/investment status tags.
+current_owners,VARCHAR,Semicolon-separated current owner names where available.
+investors,VARCHAR,Semicolon-separated investor names where available.
+latest_revenue_usd,"NUMBER(18,2)",Latest estimated revenue in USD.
+latest_revenue_estimated,BOOLEAN,Whether revenue is marked estimated.
+latest_revenue_year,NUMBER,Revenue year when available.
+linkedin_employees_count,NUMBER,LinkedIn employee count when available.
+employee_size_band,VARCHAR,Employee size band.
+founded_year,NUMBER,Founding year.
+year_total_visits,NUMBER,Annual website visits where available.
+source_file,VARCHAR,Original source file name.
+source_region,VARCHAR,EU or US package grouping.
