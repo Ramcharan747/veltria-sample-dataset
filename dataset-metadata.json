@@ -161,5 +161,7 @@
       "path": "README.md",
       "description": "Dataset card explaining scope, revenue fields and usage."
     }
-  ]
+  ],
+  "userSpecifiedSources": "Veltria public sample and schema. Full source dataset is Veltria company-level firmographic database; commercial access at https://data.veltria.in. Public sample contains no personal emails, no personal phone numbers, and no individual contact records.",
+  "image": "cover.png"
 }
