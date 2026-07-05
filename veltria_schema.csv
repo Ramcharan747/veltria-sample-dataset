@@ -21,3 +21,6 @@ founded_year,NUMBER,Founding year.
 year_total_visits,NUMBER,Annual website visits where available.
 source_file,VARCHAR,Original source file name.
 source_region,VARCHAR,EU or US package grouping.
+revenue_usd,NUMBER,"Estimated annual revenue in USD, placed near the front of the public sample so marketplaces display the revenue field clearly."
+revenue_band,VARCHAR,Readable estimated annual revenue band derived from revenue_usd.
+revenue_is_estimated,BOOLEAN,Whether the revenue figure is an estimate.
