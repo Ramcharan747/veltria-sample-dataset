@@ -1,0 +1,165 @@
+{
+  "title": "Veltria Firmographics Sample",
+  "id": "ramcharan747/veltria-firmographics-sample",
+  "licenses": [
+    {
+      "name": "CC0-1.0"
+    }
+  ],
+  "subtitle": "25-row preview with revenue bands for US and Europe private company data",
+  "description": "Public preview of Veltria company-level firmographics. Includes 25 sample rows, visible revenue_usd and revenue_band columns, schema, and field guide. Full dataset scope: 756,757 private companies; 394,182 Europe; 362,575 United States; focused on estimated $5M-$300M annual revenue. Company-level data only: no personal emails, no personal phone numbers, no individual contact records. Use cases: private equity deal sourcing, search fund target lists, market mapping, TAM sizing, GTM segmentation and CRM account enrichment. Full access: https://data.veltria.in",
+  "keywords": [
+    "business",
+    "finance",
+    "beginner",
+    "data visualization"
+  ],
+  "expectedUpdateFrequency": "monthly",
+  "resources": [
+    {
+      "path": "veltria_sample_preview_25.csv",
+      "description": "25 public preview rows with visible revenue_usd and revenue_band columns.",
+      "schema": {
+        "fields": [
+          {
+            "name": "company_id",
+            "description": "Provider/source company identifier.",
+            "type": "string"
+          },
+          {
+            "name": "company_name",
+            "description": "Company legal/trading name as available.",
+            "type": "string"
+          },
+          {
+            "name": "domain",
+            "description": "Primary company domain.",
+            "type": "string"
+          },
+          {
+            "name": "website",
+            "description": "Company website/domain field.",
+            "type": "string"
+          },
+          {
+            "name": "country",
+            "description": "ISO-style country code, e.g. US, DE, GB.",
+            "type": "string"
+          },
+          {
+            "name": "region",
+            "description": "State/region/province.",
+            "type": "string"
+          },
+          {
+            "name": "locality",
+            "description": "City/locality.",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "description": "Company-level business description.",
+            "type": "string"
+          },
+          {
+            "name": "industry",
+            "description": "Industry label when available.",
+            "type": "string"
+          },
+          {
+            "name": "keywords",
+            "description": "Semicolon-separated keyword tags.",
+            "type": "string"
+          },
+          {
+            "name": "ownership_type",
+            "description": "Semicolon-separated ownership/investment status tags.",
+            "type": "string"
+          },
+          {
+            "name": "current_owners",
+            "description": "Semicolon-separated current owner names where available.",
+            "type": "string"
+          },
+          {
+            "name": "investors",
+            "description": "Semicolon-separated investor names where available.",
+            "type": "string"
+          },
+          {
+            "name": "latest_revenue_usd",
+            "description": "Latest estimated revenue in USD.",
+            "type": "number"
+          },
+          {
+            "name": "latest_revenue_estimated",
+            "description": "Whether revenue is marked estimated.",
+            "type": "boolean"
+          },
+          {
+            "name": "latest_revenue_year",
+            "description": "Revenue year when available.",
+            "type": "number"
+          },
+          {
+            "name": "linkedin_employees_count",
+            "description": "LinkedIn employee count when available.",
+            "type": "number"
+          },
+          {
+            "name": "employee_size_band",
+            "description": "Employee size band.",
+            "type": "string"
+          },
+          {
+            "name": "founded_year",
+            "description": "Founding year.",
+            "type": "number"
+          },
+          {
+            "name": "year_total_visits",
+            "description": "Annual website visits where available.",
+            "type": "number"
+          },
+          {
+            "name": "source_file",
+            "description": "Original source file name.",
+            "type": "string"
+          },
+          {
+            "name": "source_region",
+            "description": "EU or US package grouping.",
+            "type": "string"
+          },
+          {
+            "name": "revenue_usd",
+            "description": "Estimated annual revenue in USD, placed near the front of the public sample so marketplaces display the revenue field clearly.",
+            "type": "number"
+          },
+          {
+            "name": "revenue_band",
+            "description": "Readable estimated annual revenue band derived from revenue_usd.",
+            "type": "string"
+          },
+          {
+            "name": "revenue_is_estimated",
+            "description": "Whether the revenue figure is an estimate.",
+            "type": "boolean"
+          }
+        ]
+      }
+    },
+    {
+      "path": "veltria_schema.csv",
+      "description": "Field names, Snowflake-style types and descriptions."
+    },
+    {
+      "path": "SCHEMA_AND_FIELD_GUIDE.md",
+      "description": "Human-readable field guide for buyers."
+    },
+    {
+      "path": "README.md",
+      "description": "Dataset card explaining scope, revenue fields and usage."
+    }
+  ]
+}
